@@ -10,7 +10,7 @@ import { ToastContainer } from './components/ui';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
         <PlayerProvider>
           <LibraryProvider>
